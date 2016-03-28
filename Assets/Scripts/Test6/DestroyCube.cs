@@ -4,6 +4,7 @@ using System.Collections;
 public class DestroyCube : MonoBehaviour {
 
     
+
     // Use this for initialization
     void Start () {
 	
