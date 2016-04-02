@@ -260,6 +260,7 @@ GameObject:
   - 33: {fileID: 141488436}
   - 65: {fileID: 141488435}
   - 23: {fileID: 141488434}
+  - 114: {fileID: 141488438}
   m_Layer: 0
   m_Name: Sonia
   m_TagString: Untagged
@@ -324,6 +325,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &141488438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 141488433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1820c1001354804fb4bd469a5f0d09a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poionAgapaei:
+  - {fileID: 545299845}
+  - {fileID: 335602664}
+  - {fileID: 17002649}
 --- !u!1 &335602664
 GameObject:
   m_ObjectHideFlags: 0

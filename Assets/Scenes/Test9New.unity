@@ -117,8 +117,8 @@ TextMesh:
     \u03C4\u03BF car \u03C0\u03C1\u03AD\u03C0\u03B5\u03B9 \u03BD\u03B1 \u03BA\u03B1\u03C4\u03B5\u03C5\u03B8\u03C5\u03BD\u03B8\u03B5\u03AF
     \u03C3\u03C4\u03BF point2. \u039C\u03CC\u03BB\u03B9\u03C2 \u03C6\u03C4\u03AC\u03C3\u03B5\u03B9
     \u03C4\u03BF\npoint2 \u03C0\u03C1\u03AD\u03C0\u03B5\u03B9 \u03BD\u03B1 \u03BA\u03B1\u03C4\u03B5\u03C5\u03B8\u03C5\u03BD\u03B8\u03B5\u03AF
-    \u03C3\u03C4 point2. \u039C\u03CC\u03BB\u03B9\u03C2 \u03C6\u03C4\u03AC\u03C3\u03B5\u03B9
-    \u03C3\u03C4\u03BF point2 \u03C0\u03C1\u03AD\u03C0\u03B5\u03B9 \u03BD\u03B1 \u03BA\u03B1\u03C4\u03B1\u03C3\u03C4\u03C1\u03B1\u03C6\u03B5\u03AF."
+    \u03C3\u03C4 point3. \u039C\u03CC\u03BB\u03B9\u03C2 \u03C6\u03C4\u03AC\u03C3\u03B5\u03B9
+    \u03C3\u03C4\u03BF point3 \u03C0\u03C1\u03AD\u03C0\u03B5\u03B9 \u03BD\u03B1 \u03BA\u03B1\u03C4\u03B1\u03C3\u03C4\u03C1\u03B1\u03C6\u03B5\u03AF."
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -256,6 +256,8 @@ GameObject:
   - 33: {fileID: 141488436}
   - 65: {fileID: 141488435}
   - 23: {fileID: 141488434}
+  - 114: {fileID: 141488438}
+  - 114: {fileID: 141488439}
   m_Layer: 0
   m_Name: car
   m_TagString: Untagged
@@ -320,6 +322,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &141488438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 141488433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73bad45aec3abdd4c8e6dca60af0aae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {fileID: 545299845}
+  - {fileID: 335602664}
+  - {fileID: 17002649}
+  speed: 2
+--- !u!114 &141488439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 141488433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe3faabbc3903b04dbc6d155189dea78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point3: {fileID: 17002649}
 --- !u!1 &335602664
 GameObject:
   m_ObjectHideFlags: 0
