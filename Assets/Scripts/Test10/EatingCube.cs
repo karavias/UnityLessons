@@ -16,7 +16,7 @@ public class EatingCube : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Vector3 randomPosition = new Vector3(Random.Range(-3.50f, 3.50f), Random.Range(0.98f, 2f), Random.Range(-3.50f, 3.50f));
-        Instantiate(stars, randomPosition, Quaternion.identity);
+        //Instantiate(stars, randomPosition, Quaternion.identity);
 
         transform.position = new Vector3(0f, 0.98f, 0f);          
         rigiddbody = GetComponent<Rigidbody>();
@@ -28,7 +28,7 @@ public class EatingCube : MonoBehaviour {
 	void Update () {
 
         
-        textmesh.text = cubePoints.ToString() + " points"; 
+        //textmesh.text = cubePoints.ToString() + " points"; 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rigiddbody.AddForce(Vector3.up * force);
@@ -48,10 +48,10 @@ public class EatingCube : MonoBehaviour {
             //cubePoints += starPoints;
             cubePoints += col.gameObject.GetComponent<Star>().points;
             Vector3 randomPosition = new Vector3(Random.Range(-3.50f, 3.50f), Random.Range(0.98f, 2f), Random.Range(-3.50f, 3.50f));
-            Instantiate(stars, randomPosition, Quaternion.identity);
+            //Instantiate(stars, randomPosition, Quaternion.identity);
             //starPoints = Random.Range(1, 10);
         }
-        
+
 
     }
 }
